@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>حذف الحساب — Dama Online | Delete account</title>
+<style>
+:root{--gold:#C9962E;--gold-hi:#FFE08A;--bg:#1a1206;--bg2:#241905;--card:#2b1f0c;
+--txt:#F3E8D2;--muted:#C4B08A;--line:#4a3617}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:linear-gradient(160deg,var(--bg),var(--bg2));color:var(--txt);
+font-family:system-ui,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.85;
+padding:24px 16px 64px;min-height:100vh}
+.wrap{max-width:820px;margin:0 auto}
+header{text-align:center;padding:28px 0 20px;border-bottom:2px solid var(--line);margin-bottom:28px}
+h1{font-size:1.9rem;color:var(--gold-hi);letter-spacing:.3px}
+.sub{color:var(--muted);font-size:.95rem;margin-top:8px}
+nav{display:flex;gap:8px;justify-content:center;margin:22px 0 6px;flex-wrap:wrap}
+nav button{background:var(--card);color:var(--txt);border:1px solid var(--line);
+padding:9px 20px;border-radius:999px;cursor:pointer;font-size:.95rem;font-family:inherit}
+nav button[aria-selected="true"]{background:var(--gold);color:#241905;border-color:var(--gold-hi);font-weight:700}
+section{display:none}section.on{display:block}
+h2{color:var(--gold-hi);font-size:1.2rem;margin:30px 0 10px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+p,li{color:var(--txt);font-size:1rem}
+ul{margin:10px 0 10px 4px;padding-inline-start:24px}li{margin:7px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:16px 0}
+.card.warn{border-color:var(--gold);background:#33240b}
+a{color:var(--gold-hi)}
+code{background:#0f0b04;padding:2px 7px;border-radius:5px;font-size:.92em;color:var(--gold-hi)}
+footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
+text-align:center;color:var(--muted);font-size:.88rem}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:start;vertical-align:top}
+th{background:#0f0b04;color:var(--gold-hi)}
+[dir=rtl]{text-align:right}[dir=ltr]{text-align:left}
+</style>
+</head>
+<body><div class="wrap">
+<header><h1>DAMA ONLINE</h1><div class="sub">Lemine Studio &middot; com.leminestudio.damaonline</div></header>
+<nav><button data-l="ar" onclick="pick('ar')">العربية</button><button data-l="en" onclick="pick('en')">English</button><button data-l="fr" onclick="pick('fr')">Français</button></nav>
+<section id="ar" dir="rtl">
+<h1 style="font-size:1.5rem;color:#FFE08A;margin-top:10px">حذف حسابك وبياناتك</h1>
+<p class="sub">Dama Online &mdash; com.leminestudio.damaonline</p>
+
+<p>تستطيع حذف حسابك في لعبة <strong>Dama Online</strong> وكل ما يرتبط به في أي وقت، بإحدى طريقتين.</p>
+
+<h2>الطريقة الأولى — من داخل اللعبة (فورية)</h2>
+<div class="card">
+<ol>
+<li>افتح اللعبة وسجّل الدخول بحسابك.</li>
+<li>من القائمة الرئيسية افتح <strong>الإعدادات</strong>.</li>
+<li>انزل إلى قسم الحساب واضغط <strong>«حذف الحساب»</strong> (بالأحمر).</li>
+<li>أكّد. يتمّ الحذف خلال ثوانٍ ويخرج التطبيق تلقائياً.</li>
+</ol>
+</div>
+
+<h2>الطريقة الثانية — بالبريد (إن حذفتَ التطبيق)</h2>
+<div class="card">
+<p>أرسل رسالة إلى <a href="mailto:lemine4401@gmail.com?subject=Delete%20my%20Dama%20Online%20account">lemine4401@gmail.com</a> بعنوان <strong>«حذف حسابي في Dama Online»</strong>، واذكر فيها:</p>
+<ul>
+<li><strong>اسم اللاعب</strong> الذي كنت تستعمله داخل اللعبة، و</li>
+<li>البريد الإلكتروني لحساب Google الذي سجّلتَ به الدخول (أرسل الرسالة من ذلك البريد نفسه إن أمكن — فذلك يُثبت ملكيتك للحساب ويُسرّع التنفيذ).</li>
+</ul>
+<p>نُنفّذ الطلب خلال <strong>30 يوماً</strong> كحدّ أقصى، وعادةً خلال أيام قليلة، ونردّ عليك بالتأكيد.</p>
+</div>
+
+<h2>ما الذي يُحذف بالضبط</h2>
+<ul>
+<li>حساب الدخول نفسه (Firebase Authentication) وبريده.</li>
+<li>ملفّك: اسم اللاعب، ورقم الصورة الرمزية، والرتبة والنقاط، والانتصارات والهزائم والتعادلات، وسلاسل الفوز، ومدّة اللعب، ورمز الصداقة.</li>
+<li>سجلّ مبارياتك كاملاً.</li>
+<li>صداقاتك — عندك وعند أصدقائك.</li>
+<li>التحدّيات التي أرسلتَها والتي وصلتك.</li>
+<li>رمز الإشعارات، وحالة حضورك (متصل/آخر ظهور).</li>
+<li>وجودك في طابور المطابقة وفي غرف اللعب.</li>
+</ul>
+
+<h2>ما الذي يبقى ولماذا</h2>
+<div class="card warn">
+<p><strong>سجلّات مبارياتك عند خصومك السابقين تبقى</strong> — فهي جزء من تاريخ لعبهم هم لا تاريخك أنت، وحذفها يعني محو سجلّ لاعبٍ آخر لم يطلب ذلك.</p>
+<p>لكن <strong>اسمك يُستبدل فيها بشرطة (—)</strong> فور الحذف، فلا يبقى فيها ما يدلّ عليك.</p>
+<p>وقد تظهر بعض البيانات المجمَّعة (مثل كاش لوحة الصدارة) لفترة قصيرة حتى إعادة بنائها دورياً، ثم يسقط اسمك منها تلقائياً.</p>
+</div>
+
+<h2>مهمّ قبل أن تحذف</h2>
+<p>الحذف <strong>نهائي ولا يمكن التراجع عنه</strong>. لا يمكن استرجاع رتبتك ولا نقاطك ولا سجلّك. وإن أنشأتَ حساباً جديداً بالبريد نفسه لاحقاً فسيبدأ من الصفر.</p>
+
+<h2>سؤال؟</h2>
+<p><a href="mailto:lemine4401@gmail.com">lemine4401@gmail.com</a> &mdash; وانظر أيضاً <a href="../">سياسة الخصوصية</a>.</p>
+</section><section id="en" dir="ltr">
+<h1 style="font-size:1.5rem;color:#FFE08A;margin-top:10px">Delete your account and data</h1>
+<p class="sub">Dama Online &mdash; com.leminestudio.damaonline</p>
+
+<p>You can delete your <strong>Dama Online</strong> account and everything attached to it at any time, in one of two ways.</p>
+
+<h2>Option 1 — inside the game (immediate)</h2>
+<div class="card">
+<ol>
+<li>Open the game and sign in to your account.</li>
+<li>From the main menu open <strong>Settings</strong>.</li>
+<li>Scroll to the account section and tap <strong>"Delete account"</strong> (shown in red).</li>
+<li>Confirm. Deletion completes within seconds and you are signed out automatically.</li>
+</ol>
+</div>
+
+<h2>Option 2 — by email (if you have uninstalled the app)</h2>
+<div class="card">
+<p>Send a message to <a href="mailto:lemine4401@gmail.com?subject=Delete%20my%20Dama%20Online%20account">lemine4401@gmail.com</a> with the subject <strong>"Delete my Dama Online account"</strong>, including:</p>
+<ul>
+<li>the <strong>display name</strong> you used in the game, and</li>
+<li>the email address of the Google account you signed in with (send the message from that same address if you can — it proves ownership and speeds things up).</li>
+</ul>
+<p>We complete the request within <strong>30 days</strong> at the latest, usually within a few days, and reply to confirm.</p>
+</div>
+
+<h2>Exactly what is deleted</h2>
+<ul>
+<li>The sign-in account itself (Firebase Authentication) and its email address.</li>
+<li>Your profile: display name, avatar number, rank and points, wins, losses, draws, streaks, play time, friend code.</li>
+<li>Your entire match history.</li>
+<li>Your friendships — on your side and on your friends' side.</li>
+<li>Challenges you sent and challenges you received.</li>
+<li>Your notification token and your presence record (online / last seen).</li>
+<li>Your entry in the matchmaking queue and in game rooms.</li>
+</ul>
+
+<h2>What remains, and why</h2>
+<div class="card warn">
+<p><strong>The match records held by your past opponents remain</strong> — they are part of <em>their</em> playing history, not yours, and deleting them would erase another player's record without their consent.</p>
+<p>However, <strong>your name is replaced by a dash (—)</strong> in those records at the moment of deletion, so nothing identifying you is left in them.</p>
+<p>Some aggregated data (such as the leaderboard cache) may persist briefly until it is rebuilt on its regular schedule, after which your name drops out automatically.</p>
+</div>
+
+<h2>Before you delete</h2>
+<p>Deletion is <strong>permanent and cannot be undone</strong>. Your rank, points and history cannot be restored. If you later create a new account with the same email address, it starts from zero.</p>
+
+<h2>Questions?</h2>
+<p><a href="mailto:lemine4401@gmail.com">lemine4401@gmail.com</a> &mdash; see also the <a href="../">privacy policy</a>.</p>
+</section><section id="fr" dir="ltr">
+<h1 style="font-size:1.5rem;color:#FFE08A;margin-top:10px">Supprimer votre compte et vos données</h1>
+<p class="sub">Dama Online &mdash; com.leminestudio.damaonline</p>
+
+<p>Vous pouvez supprimer votre compte <strong>Dama Online</strong> et tout ce qui y est rattaché à tout moment, de deux façons.</p>
+
+<h2>Option 1 — depuis le jeu (immédiat)</h2>
+<div class="card">
+<ol>
+<li>Ouvrez le jeu et connectez-vous à votre compte.</li>
+<li>Depuis le menu principal, ouvrez les <strong>Paramètres</strong>.</li>
+<li>Descendez jusqu'à la section du compte et touchez <strong>« Supprimer le compte »</strong> (en rouge).</li>
+<li>Confirmez. La suppression s'effectue en quelques secondes et vous êtes déconnecté automatiquement.</li>
+</ol>
+</div>
+
+<h2>Option 2 — par e-mail (si vous avez désinstallé l'application)</h2>
+<div class="card">
+<p>Envoyez un message à <a href="mailto:lemine4401@gmail.com?subject=Delete%20my%20Dama%20Online%20account">lemine4401@gmail.com</a> avec l'objet <strong>« Supprimer mon compte Dama Online »</strong>, en indiquant :</p>
+<ul>
+<li>le <strong>pseudo</strong> que vous utilisiez dans le jeu, et</li>
+<li>l'adresse e-mail du compte Google avec lequel vous vous connectiez (envoyez le message depuis cette même adresse si possible — cela prouve que le compte vous appartient et accélère le traitement).</li>
+</ul>
+<p>Nous traitons la demande sous <strong>30 jours</strong> au maximum, généralement en quelques jours, et vous répondons pour confirmer.</p>
+</div>
+
+<h2>Ce qui est supprimé exactement</h2>
+<ul>
+<li>Le compte de connexion lui-même (Firebase Authentication) et son adresse e-mail.</li>
+<li>Votre profil : pseudo, numéro d'avatar, rang et points, victoires, défaites, nuls, séries, temps de jeu, code d'ami.</li>
+<li>L'intégralité de votre historique de parties.</li>
+<li>Vos amitiés — de votre côté comme du côté de vos amis.</li>
+<li>Les défis que vous avez envoyés et ceux que vous avez reçus.</li>
+<li>Votre jeton de notification et votre présence (en ligne / dernière connexion).</li>
+<li>Votre entrée dans la file de matchmaking et dans les salons de jeu.</li>
+</ul>
+
+<h2>Ce qui subsiste, et pourquoi</h2>
+<div class="card warn">
+<p><strong>Les enregistrements de parties conservés par vos anciens adversaires subsistent</strong> — ils font partie de <em>leur</em> historique de jeu, pas du vôtre, et les effacer reviendrait à supprimer l'historique d'un autre joueur sans son accord.</p>
+<p>Cependant, <strong>votre nom y est remplacé par un tiret (—)</strong> au moment de la suppression : plus rien ne vous y identifie.</p>
+<p>Certaines données agrégées (comme le cache du classement) peuvent persister brièvement jusqu'à leur reconstruction périodique, après quoi votre nom en disparaît automatiquement.</p>
+</div>
+
+<h2>Avant de supprimer</h2>
+<p>La suppression est <strong>définitive et irréversible</strong>. Votre rang, vos points et votre historique ne peuvent pas être restaurés. Si vous créez plus tard un nouveau compte avec la même adresse e-mail, il repart de zéro.</p>
+
+<h2>Une question ?</h2>
+<p><a href="mailto:lemine4401@gmail.com">lemine4401@gmail.com</a> &mdash; voir aussi la <a href="../">politique de confidentialité</a>.</p>
+</section>
+<footer>Lemine Studio &mdash; lemine4401@gmail.com</footer>
+</div><script>
+function pick(l){
+ document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===l));
+ document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-selected',b.dataset.l===l));
+ document.documentElement.lang=l;
+ document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+}
+(function(){
+ var h=(location.hash||'').replace('#','');
+ var l=['ar','en','fr'].indexOf(h)>=0?h:'ar';
+ function go(){pick(l);window.scrollTo(0,0);}
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go();
+ window.addEventListener('load',function(){window.scrollTo(0,0)});
+})();
+</script></body></html>
