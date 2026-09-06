@@ -56,7 +56,7 @@ th{background:#0f0b04;color:var(--gold-hi)}
 <tr><td>حالة الاتصال (متصل / غير متصل / في مباراة) وآخر ظهور</td><td>أثناء استعمال اللعبة</td><td>إظهار حالتك لأصدقائك.</td></tr>
 <tr><td>رمز الإشعارات (FCM token)</td><td>عند السماح بالإشعارات</td><td>إرسال إشعار حين يتحدّاك صديق أو يُعثر على منافس. <strong>مخزَّن في موضع خاص لا يقرؤه أي لاعب آخر.</strong></td></tr>
 <tr><td>معرّف الإعلانات (Advertising ID)</td><td>تلقائياً عبر مكتبتَي Google AdMob وFirebase Analytics</td><td>عرض الإعلانات وقياس أدائها، وتحليل استعمال اللعبة.</td></tr>
-<tr><td>بيانات استعمال وجهاز (نوع الجهاز، نسخة النظام، الأحداث داخل اللعبة، الأعطال)</td><td>تلقائياً عبر Firebase Analytics</td><td>معرفة ما يُستعمل وما يتعطّل لتحسين اللعبة.</td></tr>
+<tr><td>بيانات استعمال وجهاز (نوع الجهاز، نسخة النظام، الأحداث داخل اللعبة)</td><td>تلقائياً عبر Firebase Analytics</td><td>معرفة ما يُستعمل لتحسين اللعبة.</td></tr>
 <tr><td>الدولة أو المنطقة التقريبية</td><td>تستنتجها خدمات Google من عنوان الإنترنت</td><td>الإعلانات والإحصاءات. <strong>اللعبة لا تطلب إذن الموقع ولا تقرأ موقعك الجغرافي من الجهاز.</strong></td></tr>
 <tr><td><strong>صوتك أثناء الدردشة الصوتيّة</strong></td><td>فقط حين تفعّل الصوت أنت وخصمك معاً وتمنح إذن الميكروفون</td><td>نقلُ كلامك مباشرةً إلى الطرف الآخر عبر خدمة <strong>Vivox</strong> من Unity Technologies. <strong>لا نُسجّل صوتك ولا نحفظه</strong> — انظر البطاقة أسفل الجدول.</td></tr>
 </table>
@@ -80,6 +80,7 @@ th{background:#0f0b04;color:var(--gold-hi)}
 <li>جهات الاتصال، والرسائل النصية، والتقويم.</li>
 <li>الصور ومقاطع الفيديو والملفات — لا يمكنك رفع أي ملف، والصور الرمزية مدمجة.</li>
 <li><strong>الكاميرا</strong> — لا توجد في اللعبة أي شيفرة تطلبها.</li>
+<li><strong>تقارير الأعطال</strong> — <strong>لا نجمعها نحن</strong>: أداة Crashlytics غير مثبَّتة في المشروع، وFirebase Analytics وحدها لا تُبلّغ الأعطال. ويبقى أنّ Google Play نفسه يعرض لنا إحصاءً مجمَّعاً ومجهول الهويّة عن انهيارات التطبيق، لا يخصّ جهازاً ولا حساباً بعينه، ولا نستطيع إيقافه.</li>
 <li><strong>تسجيلات صوتيّة</strong> — لا نُسجّل صوتك ولا نحفظه. الميكروفون لا يُفتح إلّا في الدردشة الصوتيّة وبموافقتك، والصوت يُنقَل لحظةً بلحظة ولا يُخزَّن — انظر القسم ١.</li>
 <li>أي بيانات مالية أو صحّية. لا توجد مشتريات داخل هذه النسخة.</li>
 <li><strong>رسائل الدردشة</strong> — ميزة الدردشة معطَّلة في هذه النسخة ولا تُرسَل أي رسالة ولا تُخزَّن.</li>
@@ -147,7 +148,7 @@ th{background:#0f0b04;color:var(--gold-hi)}
 <tr><td>Presence (online / offline / in a match) and last seen</td><td>While you use the game</td><td>To show your status to your friends.</td></tr>
 <tr><td>Notification token (FCM)</td><td>If you allow notifications</td><td>To notify you when a friend challenges you or an opponent is found. <strong>Stored in a private location no other player can read.</strong></td></tr>
 <tr><td>Advertising ID</td><td>Automatically, via the Google AdMob and Firebase Analytics SDKs</td><td>Serving and measuring ads, and analysing game usage.</td></tr>
-<tr><td>Usage and device data (device model, OS version, in-game events, crashes)</td><td>Automatically, via Firebase Analytics</td><td>To learn what is used and what breaks.</td></tr>
+<tr><td>Usage and device data (device model, OS version, in-game events)</td><td>Automatically, via Firebase Analytics</td><td>To learn what is used, so we can improve the game.</td></tr>
 <tr><td>Approximate country or region</td><td>Inferred by Google services from your IP address</td><td>Ads and statistics. <strong>The game never requests location permission and never reads your device location.</strong></td></tr>
 <tr><td><strong>Your voice during voice chat</strong></td><td>Only when you and your opponent both switch voice on and you grant microphone permission</td><td>Carrying your speech live to the other side through <strong>Vivox</strong>, a Unity Technologies service. <strong>We do not record or store your voice</strong> — see the card below the table.</td></tr>
 </table>
@@ -171,6 +172,7 @@ th{background:#0f0b04;color:var(--gold-hi)}
 <li>Contacts, SMS messages, calendar.</li>
 <li>Photos, videos or files — you cannot upload anything; avatars are built in.</li>
 <li><strong>Camera</strong> — the game contains no code that requests it.</li>
+<li><strong>Crash reports</strong> — <strong>we do not collect them ourselves</strong>: Crashlytics is not installed in this project, and Firebase Analytics alone does not report crashes. Google Play itself does show us aggregated, anonymous crash statistics for the app; they identify no device and no account, and we cannot switch them off.</li>
 <li><strong>Voice or sound recordings</strong> — we do not record or store your voice. The microphone is opened only for voice chat, only with your consent, and the audio is carried in real time rather than stored — see section 1.</li>
 <li>Any financial or health data. This version has no in-app purchases.</li>
 <li><strong>Chat messages</strong> — the chat feature is disabled in this version; no message is sent or stored.</li>
@@ -238,7 +240,7 @@ th{background:#0f0b04;color:var(--gold-hi)}
 <tr><td>Présence (en ligne / hors ligne / en partie) et dernière connexion</td><td>Pendant l'utilisation du jeu</td><td>Montrer votre statut à vos amis.</td></tr>
 <tr><td>Jeton de notification (FCM)</td><td>Si vous autorisez les notifications</td><td>Vous prévenir quand un ami vous défie ou qu'un adversaire est trouvé. <strong>Stocké dans un emplacement privé qu'aucun autre joueur ne peut lire.</strong></td></tr>
 <tr><td>Identifiant publicitaire</td><td>Automatiquement, via les SDK Google AdMob et Firebase Analytics</td><td>Diffuser et mesurer les publicités, analyser l'usage du jeu.</td></tr>
-<tr><td>Données d'usage et d'appareil (modèle, version du système, événements en jeu, plantages)</td><td>Automatiquement, via Firebase Analytics</td><td>Savoir ce qui est utilisé et ce qui échoue.</td></tr>
+<tr><td>Données d'usage et d'appareil (modèle, version du système, événements en jeu)</td><td>Automatiquement, via Firebase Analytics</td><td>Savoir ce qui est utilisé, pour améliorer le jeu.</td></tr>
 <tr><td>Pays ou région approximative</td><td>Déduit par les services Google à partir de votre adresse IP</td><td>Publicités et statistiques. <strong>Le jeu ne demande jamais l'autorisation de localisation et ne lit jamais votre position.</strong></td></tr>
 <tr><td><strong>Votre voix pendant le chat vocal</strong></td><td>Uniquement lorsque vous et votre adversaire activez tous les deux la voix et que vous accordez l'autorisation micro</td><td>Transmettre votre parole en direct à l'autre partie via <strong>Vivox</strong>, un service d'Unity Technologies. <strong>Nous n'enregistrons ni ne conservons votre voix</strong> — voir la carte sous le tableau.</td></tr>
 </table>
@@ -262,6 +264,7 @@ th{background:#0f0b04;color:var(--gold-hi)}
 <li>Contacts, SMS, agenda.</li>
 <li>Photos, vidéos ou fichiers — aucun téléversement n'est possible ; les avatars sont intégrés.</li>
 <li><strong>Caméra</strong> — le jeu ne contient aucun code la demandant.</li>
+<li><strong>Rapports de plantage</strong> — <strong>nous ne les collectons pas nous-mêmes</strong> : Crashlytics n'est pas installé dans ce projet, et Firebase Analytics seul ne signale pas les plantages. Google Play nous montre néanmoins des statistiques de plantage agrégées et anonymes ; elles n'identifient ni appareil ni compte, et nous ne pouvons pas les désactiver.</li>
 <li><strong>Enregistrements vocaux ou sonores</strong> — nous n'enregistrons ni ne conservons votre voix. Le micro n'est ouvert que pour le chat vocal, avec votre accord, et l'audio est acheminé en temps réel sans être stocké — voir la section 1.</li>
 <li>Aucune donnée financière ou de santé. Cette version ne contient aucun achat intégré.</li>
 <li><strong>Messages de discussion</strong> — la fonction de chat est désactivée dans cette version ; aucun message n'est envoyé ni stocké.</li>
